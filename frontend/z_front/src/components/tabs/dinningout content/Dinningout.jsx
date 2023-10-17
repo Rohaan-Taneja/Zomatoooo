@@ -12,7 +12,7 @@ const Dinningout = () => {
         i1={food_item.naam}
         i2={food_item.f_img}
         i3={food_item.rating}
-        i4={food_item.price}
+        i4={food_item.price }
       />
     );
   };

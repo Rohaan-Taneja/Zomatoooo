@@ -91,7 +91,8 @@ const username = "Rohaan";
 const password = "Rohaan@123";
 const dbName = "zomatoo_food";
 
-const dbURI = `mongodb+srv://Rohaan:${encodeURIComponent(
+
+const dbURI =  `mongodb+srv://Rohaan:${encodeURIComponent(
   password
 )}@cluster0.mcsmqnh.mongodb.net/${dbName}?retryWrites=true&w=majority`;
 
