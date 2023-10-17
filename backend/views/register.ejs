@@ -1,0 +1,126 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  html{
+    font-size: 100%;
+  }
+
+
+  .register_page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+  }
+
+  .register_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem; /* Adjust padding as needed */
+    background-color: white;
+    border-radius: 10px; /* Add rounded corners to the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+
+  .formm {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .formm input {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    font-family: sans-serif;
+    font-size: 1.4rem; /* Increased font size */
+    border: 1px solid #ccc; /* Add a border for inputs */
+    border-radius: 5px; /* Add rounded corners to inputs */
+  }
+
+  .register_bttn {
+    padding: 0.5rem;
+
+    font-size: 1rem;
+    margin: 1rem 0;
+    font-family: sans-serif;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .goole_bttn {
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+
+  .goole_bttn a {
+    text-decoration: none;
+    padding: 0.5rem;
+    color: grey;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+  }
+
+  
+@media(max-width:710px){
+  html{
+    font-size:80%;
+    
+}
+
+}
+
+@media(max-width:420px){
+  html{
+    font-size:70%;
+    
+}
+
+}
+
+
+  
+
+
+
+</style>
+
+<div class="register_page">
+  <div class="register_form">
+    <h1>Register</h1>
+    <form action="/user/register" method="post" class="formm">
+      <input
+        type="username"
+        name="username"
+        id="username"
+        placeholder="email"
+      />
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="password"
+      />
+
+      <button type="submit" class="register_bttn">Register</button>
+      <h4 style="text-align: center">or</h4>
+    </form>
+
+    <button class="goole_bttn">
+      <a href="/user/auth/google"> <B>G</B> Continue with google</a>
+    </button>
+  </div>
+</div>

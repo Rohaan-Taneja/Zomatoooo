@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .upload_form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+    }
+  </style>
+  <body>
+    <form action="/" method="post" class="upload_form" enctype="multipart/form-data">
+      <div>
+        <h3>food image</h3>
+        <input type="file" name="food_img" id="food_img" />
+      </div>
+      <div>
+        <h3>name</h3>
+        <input type="text" name="naam" id="naam" />
+      </div>
+
+      <div>
+        <h3>rating</h3>
+        <input type="text" name="rating" id="rating" />
+      </div>
+
+      <div>
+        <h3>price</h3>
+        <input type="number" name="price" id="price" />
+      </div>
+
+      <div>
+        <h3>food description</h3>
+        <input type="text" name="desc" id="desc" />
+      </div>
+
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
