@@ -1,0 +1,1404 @@
+*{
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+    
+    
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    overflow-wrap: normal;
+}
+body{
+    overflow-x: hidden;
+    
+}
+
+
+
+/* navbar css */
+
+.outercontainer_of_navbar{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.custom{
+    width: 85%;
+    min-height: 10vh;
+    background-color: white;
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+
+.zomatoo{
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-style: italic;
+    color: purple;
+}
+
+.search_bar{
+    width: 70%;
+    height: 9rem;
+    margin-right: 1rem;
+    padding: 2rem;
+}
+
+.search_bar input{
+  height: 100%;
+  font-size: 2rem;
+}
+
+.navbar_reg_login_list{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.navbar_reg_login_list li{
+  list-style-type: none;
+  margin: 2rem;
+}
+
+.navbar_reg_login_list li a{
+  color: grey;
+  text-decoration: none;
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+.username_navbar{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+  border: none;
+  font-size: 2rem;
+  font-family: cursive;
+  color: #00000075;
+  font-weight: 600;
+  
+
+}
+
+.dropdownicon{
+  font-size: 3rem;
+  margin-top: -0.8rem;
+  margin-left: 0.3rem;
+  transform: rotate(180deg);
+}
+
+.userimage_navbar{
+  height: 4.5rem;
+  border-radius: 50% 50%;
+  padding-right: 0.5rem;
+
+
+}
+
+
+
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+
+/* Styles for the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change link color on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown-container:hover .dropdown-content {
+  display: block;
+}
+
+
+/* ###################################### */
+
+ /* css for button types below navbar */
+
+
+ /* ############################################# */
+
+.types_below_navbar{
+    width: 85% ;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 auto;
+
+}
+
+
+.type_btn{
+    width: 15vw;
+    height: 10vh;
+    font-size: 2.5rem;
+    background-color: white;
+    border: none;
+    color: rgba(128, 128, 128, 0.701);
+    font-weight: 500;
+    margin-left: 0.5rem;
+    
+}
+
+.active{
+    border-bottom: red solid .5rem;
+    color: rgb(242,116,128);
+    
+}
+
+.taboptions_img{
+  height: 5rem;
+}
+
+.tab_btn{
+  display:flex ;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+
+ */**********************************
+ css for delivery_content_grid
+
+ *******************************/
+
+
+
+ .heading_div{
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+ }
+ .homepage_grid_content_heading{
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+
+
+
+
+
+ }
+ .delivery_content_grid{
+    display: grid;
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+ }
+
+
+
+
+
+
+ */**********************************
+ css for card template
+
+ *******************************/
+
+.card_outer{
+    display: flex;
+    width: 25vw;
+    height: max-content;
+    flex-direction: column;
+    
+
+    
+
+}
+.card_outer:hover{
+  box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.092); 
+}
+
+
+.card_frame{
+  border-radius: 2rem;
+}
+
+
+.card_img{
+  border-radius: 2rem;
+  /* border-bottom: 1px solid black; */
+
+}
+.name_rating_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.only_nameclass{
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: cursive;
+    text-decoration: underline;
+    
+}
+
+.onlyratingclass{
+    font-size: 1.8rem;
+    font-weight:700 ;
+    font-family: sans-serif;
+    color: white;
+    background-color: rgb(36,150,63);
+    padding: .4rem;
+    height: 3rem;
+    border-radius: 20%;
+}
+
+.price_div{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.pricee{
+  font-size: 2rem;
+  text-decoration: underline white;
+  font-weight: 600;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+ */**********************************
+ css for filters page
+
+ *******************************/
+
+ 
+ .heading_and_cross_flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+ }
+
+ .offcanvas{
+  height: fit-content;
+ }
+
+
+ .filter_cross_btn{
+  margin-right: 0.6rem;
+
+  border: none;
+  background-color: white;
+  font-size: 3rem;
+  font-weight: 500;
+
+ }
+ .filter_box_heading{
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding: 1rem;
+ }
+
+.split_heading_and_content{
+  width: 100%;
+  margin-bottom: 0rem;
+
+}
+
+.outer_filters_row{
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: flex-start;
+    
+
+
+}
+
+.filter_button{
+    border: grey solid 0.1rem;
+    background-color: white;
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding: 0.6rem;
+    
+}
+
+.filter_page_title{
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.menu_outer{
+    display: flex;
+    flex-direction: row;
+}
+
+.custom_modal_height{
+  height: fit-content;
+}
+
+.menu_left_part{
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+}
+
+.rate_and_price_bttn{
+  font-size: 2.5rem;
+  height: 50%;
+  padding: 1.5rem;
+  border: none;
+  background-color:rgb(248,248,248);
+  color: grey;
+  font-weight: 500;
+  transition: border 0.2s ease-in-out;
+}
+
+.selected_filter{
+  border-left: 0.8rem rgb(241,100,114) solid;
+}
+
+.menu_right_part{
+  width: 100%;
+
+}
+
+
+
+
+
+
+
+
+ */**********************************
+ css for ratings page
+
+ *******************************/
+
+ .range-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.label {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 500;
+  width: 2rem;
+  text-align: center;
+}
+.rating_page {
+  width: 70%;
+  margin-left: 2rem;
+}
+
+.form-group{
+}
+
+/* Define custom properties (variables) for the colors you want */
+:root {
+  --thumb-color: blue; 
+  --range-color: green; 
+  --track-color: gray; 
+}
+
+/* Apply the custom colors to the range input */
+.form-range {
+  width: 100%;
+  
+}
+
+/* Customize the thumb */
+.form-range::-webkit-slider-thumb {
+  background-color: var(--thumb-color);
+  border: 0.2rem solid var(--thumb-color);
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+/* Customize the track */
+.form-range::-moz-range-track {
+  background-color: var(--track-color);
+  height: 0.6rem;
+}
+
+.form-range::-webkit-slider-runnable-track {
+  background-color: var(--track-color);
+  height: 0.6rem;
+}
+
+/* Customize the selected range */
+.form-range::-moz-range-thumb {
+  background-color: var(--range-color);
+}
+
+.form-range::-webkit-slider-thumb {
+  background-color: var(--range-color);
+}
+
+.selectedrating_label_and_rating_div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+
+  .rating_heading{
+
+    font-size: 3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  }
+
+  .actual_rating{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    padding-left: 1rem;
+    color: red;
+    font-weight: 600;
+  }
+
+  
+  .rating_apply_btn_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 2rem;
+    padding-right: 0rem;
+  }
+ */**********************************
+ css for price filter page
+
+ *******************************/
+
+
+
+
+.outer_of_price_filter_page{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 6rem;
+  flex-wrap: nowrap;
+
+  }
+
+  .radiobttn_class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+;
+
+  }
+
+  .radio_btn_label{
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    margin: 0.5rem;
+  }
+
+
+  .pricefilter_appy_div{
+    display: flex;
+    justify-content:flex-end;
+    margin: 2rem;
+    margin-right: 5rem;
+   
+    
+
+  }
+
+  .price_filter_apply_bttn{
+    background-color: rgb(241,100,114) ;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 0.8rem;
+    color: white;
+    font-weight: 600;
+    border-radius: 0.5rem;
+  }
+
+
+
+
+
+   */**********************************
+ css for Filters_Result_Page
+
+ *******************************/
+
+
+
+
+  .filtered_content_grid{
+    display: grid;
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+  }
+
+  .filters_row{
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .rating_button{
+    margin: 2.5rem;
+    border: grey solid 0.1rem;
+    background-color: white;
+    font-size: 2rem;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    background-color: rgb(241,100,114);
+    color: white;
+  }
+
+  .horizontal_line_of_filter_result_page{
+    width: 85%;
+    height: 0.2rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    background: linear-gradient(to right , black, white);
+  }
+
+
+
+  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+   */**********************************
+ css for  Product_Page_Photo_Section;
+
+ *******************************/
+
+
+  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+
+  .productpage_image_outer{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    margin-top: 1rem;
+    
+  }
+  .productpage_image_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+
+
+  }
+  .productpage_image_flex_div1{
+    position: relative;
+    height: 40rem;
+    width: 40%;
+    /* border: 1px grey solid; */
+    overflow: hidden;
+
+  }
+  .productpage_image_flex_div3{
+    position: relative;
+    height: 40rem;
+    width: 40%;
+    /* border: 1px grey solid; */
+    overflow: hidden;
+
+  }
+  
+  
+
+  .productpage_image_flex_image1{
+    height: 100%;
+    width: 100%;
+    filter: brightness(.8);
+    position: relative;
+    transition: transform 0.4s ease-in-out 0s, opacity 1.63s ease 0s, filter 0.4s ease 0s;
+  }
+
+  .productpage_image_flex_image1:hover{
+    transform: scale(1.2);
+    filter: brightness(1);
+  
+  }
+
+
+
+
+  .productpage_image_flex_image3{
+    height: 100%;
+    width: 100%;
+    filter: brightness(.5);
+    transition: transform 0.4s ease-in-out 0s, opacity 1.63s ease 0s, filter 0.4s ease 0s;
+
+  }
+  .productpage_image_flex_image3:hover{
+    transform: scale(1.2);
+    filter: brightness(1);
+  
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: 50%; /* Adjust the top position to center vertically */
+    left: 50%; /* Adjust the left position to center horizontally */
+    transform: translate(-50%, -50%); /* Center the text both vertically and horizontally */
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white; /* Text color */
+
+    font-size: 1.8rem;
+  }
+  
+  
+  
+  
+
+
+  .productpage_image_flex_div2{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 40rem;
+  }
+
+  .image_set2{
+    width: 100%;
+    height: 50%;
+    filter: hue-rotate(32deg);
+  }
+
+  .productpage_image_details{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  .food_name_rating_row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+  }
+
+  
+
+  .food_name{
+    
+    font-size: 4rem;
+    font-family: Okra, Helvetica, sans-serif;
+    font-weight: 400;
+  }
+  .food_rating{
+    font-size: 2.5rem;
+    font-weight:700 ;
+    font-family: sans-serif;
+    color: white;
+    background-color: rgb(36,150,63);
+    padding: .4rem;
+    height: 4rem;
+    border-radius: 20%;
+    margin: 0.8rem;
+
+  }
+  .food_price_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+  }
+  .deal_of_the_day{
+    font-size: 1.8rem;
+    color: red;
+    font-weight: 600;
+    margin-bottom: -1rem;
+  }
+  .price_and_pricelabe_div{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .food_price_label{
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    
+
+  }
+
+  .food_price{
+
+    font-size: 2rem;
+    font-family: cursive;
+    font-weight: 700;
+
+  }
+
+  .add_to_cart_bttn{
+    margin-left: 2rem;
+    padding: 0.5rem;
+    color: white;
+    font-size: 2.5rem;
+    background-color: orange;
+    border-radius: 1.2rem;
+  }
+
+
+
+
+
+  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+   */**********************************
+ css for overview section 
+
+ *******************************/
+
+  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+  .overview_section{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+  }
+  .subsections_individual_div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+  }
+
+
+  .overview_heading{
+    font-size: 2.3rem;
+    font-family: sans-serif;
+    color: black;
+  }
+
+  .overview_content{
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.604);
+    margin-top: 1rem;
+
+  }
+
+
+  .overview_zomatoo_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+
+
+
+
+  
+  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+   */**********************************
+ css for slides section  section 
+
+ *******************************/
+
+  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+
+
+
+
+/* Slider.css */
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+
+}
+
+.slider {
+  display: flex;
+  justify-content: space-evenly;
+  transition: transform 0.5s ease-in-out;
+  margin: 2rem;
+  margin-left: 0rem;
+  gap: 1rem;
+}
+
+.slide {
+  flex: 0 0 100%;
+  width: 50vw;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+css for review section 
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+.reviews_section_div{
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.reviewpage_outer{
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+
+}
+
+.complete_review_template{
+  
+  display: flex;
+  flex-direction: column;
+
+  
+
+}
+
+.review_photoname_stars_div{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+
+
+}
+.user_image{
+  height: 7rem;
+  border-radius: 50% 50%;
+  padding: 1rem;
+}
+.review_name{
+  font-size: 2rem;
+}
+
+.review_stars{
+  padding-left: 4rem;
+  font-size :1.8rem;
+}
+
+.actual_review{
+  font-size: 2rem;
+  color: #000000a3;
+  margin-left: 7rem;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+css for cart  section 
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+.cart_outer_grid{
+  width: 85%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+}
+.horizontal_line{
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right , black , white);
+  margin-bottom: 3rem;
+}
+
+.cart_heading_row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  padding-left: 0rem;
+}
+
+.cart_heading{
+  font-size: 4rem;
+  font-weight: 900;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.no_of_items{
+  font-size: 2.3rem;
+  color: #00000091;
+  font-weight: 500;
+  margin-right: 1rem;
+ 
+
+}
+.cart_total_amaount_section{
+  padding: 5rem;
+  
+  /* margin-top: rem; */
+
+}
+
+.summary{
+  font-size: 3rem;
+  font-weight: 900;
+  color: #00000091;
+  text-align: center;
+  padding: 3rem;
+  padding-top: 0rem;
+
+}
+
+.cart_total_div_hr{
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right ,white, black , white);
+  margin-bottom: 3rem;
+}
+
+.total_items_div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.8rem;
+}
+
+.total_itmes_label{
+  font-size: 2rem;
+  font-weight: 500;
+  color: #00000091 ;
+}
+
+
+.total_amount_div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  margin-top: 5rem;
+
+}
+
+.total_amount_label{
+  font-size: 2rem;
+  font-weight: 500;
+  color: #00000091 ;
+
+}
+
+.delivery_charges_div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  margin-top: 5rem;
+
+}
+
+.delivery_charges_label{
+  font-size: 2rem;
+  font-weight: 500;
+  color: #00000091 ;
+}
+
+.grand_total_div{
+
+  display: flex;
+  flex-direction: row;
+  font-size: 1.8rem;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.grand_total_label{
+
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #00000091 ;
+ 
+
+}
+.pay_bttn_div{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 3rem;
+  margin-right: 0rem;
+}
+
+.order{
+  padding: 1rem;
+  font-size: 2rem;
+  font-family: cursive;
+  color: white;
+  font-weight: 700;
+  background-color: red;
+  border: none;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+
+
+
+
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+css for cart item template section 
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+.cart_template_outer{
+  width: 100%;
+  padding: 1.5rem;
+  /* background-color: #80808024; */
+  border-radius: 1.5rem;
+  margin-bottom: 4rem;
+  box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.1); 
+  margin-right: 2rem;
+}
+
+
+.link_to_the_productpage{
+  text-decoration: none;
+}
+.cart_item{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.cart_food_image{
+  width: 10rem;
+  border-radius: 3rem;
+
+}
+
+.name_price_div{
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+
+.cart_item_name{
+  font-size: 2.5rem;
+  color: #00000091;
+  font-weight: 700;
+}
+.price_quantity_div{
+  display: flex;
+  flex-direction: row;
+}
+
+.cart_item_price{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  color: black;
+  font-size: 1.8rem;
+}
+
+.cart_item_quantity{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-left: 2rem;
+  color: black;
+  font-size: 1.8rem;
+
+}
+
+.footer_links{
+  color: grey;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+media query css 
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+@media(max-width:900px){
+  html{
+    font-size: 59%;
+    
+}
+.navbar_reg_login_list{
+  padding: left 0rem; ;
+}
+.navbar_reg_login_list li{
+  margin: 0rem;
+  margin-right: 1.5rem;
+}
+
+.search_bar{
+  padding-right: 0rem;
+}
+
+}
+
+@media(max-width:770px){
+  html{
+    font-size: 56%;
+    
+}
+
+}
+
+@media(max-width:710px){
+  html{
+    font-size: 54%;
+    
+}
+
+.register_form{
+  width: 40vw;
+
+}
+
+
+
+
+
+}
+
+@media(max-width:690px){
+  html{
+    font-size: 52%;
+    
+}
+.type_btn{
+  margin-right: 2rem;
+}
+
+.card_outer{
+  display: flex;
+  width: 40vw;
+  height: max-content;
+  flex-direction: column;
+
+}
+
+.cart_heading{
+  font-size: 3.5rem;
+}
+
+}
+
+@media(max-width:610px){
+  html{
+    font-size: 51%;
+    
+}
+
+.register_form {
+  width: 80%;
+}
+
+.cart_heading{
+  font-size: 3rem;
+}
+}
+
+
+@media(max-width:595px){
+  html{
+    font-size: 50%;
+    
+}
+
+
+}
+
+
+@media(max-width:550px){
+  html{
+    font-size: 47%;
+    
+}
+
+.type_btn{
+  height: 8vh;
+  
+  
+}
+
+}
+
+
+@media(max-width:515px){
+  html{
+    font-size: 45%;
+    
+}
+
+.type_btn{
+  height: 7.5vh;
+  
+  
+}
+
+}
+
+
+@media(max-width:495px){
+  html{
+    font-size: 43%;
+    
+}
+.type_btn{
+  height: 7vh;
+  
+  
+}
+
+}
+
+
+@media(max-width:470px){
+  html{
+    font-size: 41%;
+    
+}
+
+
+}
+
+
+@media(max-width:448px){
+  html{
+    font-size: 39%;
+    
+}
+
+
+}
+
+
+@media(max-width:425px){
+  html{
+    font-size: 37%;
+    
+}
+
+.type_btn{
+  height: 6vh;
+  
+  
+}
+
+
+}
+
+
+@media(max-width:403px){
+  html{
+    font-size: 35%;
+    
+}
+
+
+}
+
+
+
+@media(max-width:380px){
+  html{
+    font-size: 31%;
+    
+}
+
+.type_btn{
+  height: 5vh;
+  
+  
+}
+
+
+}
+
+
+@media(max-width:340px){
+  html{
+    font-size: 29%;
+    
+}
+
+
+}
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+
