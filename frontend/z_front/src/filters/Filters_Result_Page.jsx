@@ -26,7 +26,7 @@ const Filters_Result_Page = () => {
     );
   };
 
-  const backendURL = "http://localhost:999";
+  const backendURL = "https://zomatoo-backend-iht3.onrender.com";
 
   useEffect(() => {
     fetch(`${backendURL}/filter/${filter_query}`)

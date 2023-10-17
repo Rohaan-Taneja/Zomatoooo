@@ -44,14 +44,14 @@ passport.deserializeUser(function (user, cb) {
   });
 });
 
-
+const server_url=process.env.SERVER_URL;
 //authentication using google , (process)
 passport.use(
   new GoogleStrategy(
     {
       clientID: process.env.CLIENTID,
       clientSecret: process.env.CLIENTSECRET,
-      callbackURL: "http://localhost:999/user/google/auth/authorized",
+      callbackURL:`${server_url}/user/google/auth/authorized`,
       scope: ["profile", "email"]
       // userProfileURL:"https://www.googleapis.com/oauth2/v3/userinfo"
     },
@@ -101,12 +101,14 @@ router.get("/login", (req, res) => {
   res.render("login");
 });
 
+
+const client_url=process.env.CLIENT_URL
 //checking the user authentication and allowing it to proceed further
 router.get("/authenticated", (req, res) => {
   if (req.isAuthenticated()) {
     check_login_logout=true;
     console.log("mai redirect me hu");
-    res.redirect("http://localhost:3000");
+    res.redirect(`${client_url}`);
   } else {
     res.redirect("/login");
   }
@@ -134,7 +136,7 @@ router.get("/logout", (req, res) => {
     } else {
       console.log("i am logout");
       check_login_logout = false
-      res.redirect("http://localhost:3000");
+      res.redirect(`${client_url}`);
     }
   });
 });

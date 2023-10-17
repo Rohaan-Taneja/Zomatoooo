@@ -21,7 +21,7 @@ const Productpage = () => {
   console.log("status " , check_user_details)
 
 
-  const backendURL = "http://localhost:999";
+  const backendURL = "https://zomatoo-backend-iht3.onrender.com";
 
   // getting the product details
   useEffect(() => {

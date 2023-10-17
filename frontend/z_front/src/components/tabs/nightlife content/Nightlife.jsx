@@ -17,7 +17,7 @@ const Nightlife = () => {
     );
   };
 
-  const backendURL = "http://localhost:999";
+  const backendURL = "https://zomatoo-backend-iht3.onrender.com";
 
   const [fetchedData, setFetchedData] = useState([]);
 

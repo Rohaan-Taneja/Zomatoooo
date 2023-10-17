@@ -23,7 +23,7 @@ const Navbar = () => {
     setcheck_user_details(updated_status);
   };
 
-  const backendURL = "http://localhost:999";
+  const backendURL = "https://zomatoo-backend-iht3.onrender.com";
 
   useEffect(() => {
     // Fetch the login/logout status , to update the navbar
@@ -99,7 +99,7 @@ const Navbar = () => {
                   <a
                     className="mr-2"
                     aria-current="page"
-                    href="http://localhost:999/user/register"
+                    href={`${backendURL}/user/register`}
                     role="button"
                   >
                     Register
@@ -108,7 +108,7 @@ const Navbar = () => {
                 <li className="nav-item ">
                   <a
                     className=" ml-3"
-                    href="http://localhost:999/user/login"
+                    href={`${backendURL}/user/login`}
                     role="button"
                   >
                     login

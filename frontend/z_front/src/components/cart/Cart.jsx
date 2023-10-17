@@ -8,16 +8,19 @@ import Footer from "../Footer";
 const Cart = () => {
   const [cart_data, setcart_data] = useState([]);
 
+  const backendURL = "http://localhost:999" ;
+
+  
   useEffect(() => {
     // Fetch  cart data from  API endpoint
-    fetch("http://localhost:999/user/cart_data")
+    fetch(`${backendURL}/user/cart_data`)
       .then((response) => response.json())
       .then((data) => setcart_data(data))
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
 
-  const backendURL = "http://localhost:999" ;
+  
 
 
   // function for the payment , data in the cart is send to backend and url to proceed further will come 

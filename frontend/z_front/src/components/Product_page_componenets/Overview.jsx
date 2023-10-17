@@ -9,7 +9,7 @@ const Overview = (props) => {
     // storing the similar restaurants
     const [similar_restaurant , setsimilar_restaurant] = useState( null)
 
-    const backendURL = "http://localhost:999";
+    const backendURL = "https://zomatoo-backend-iht3.onrender.com";
 
     useEffect(() => {
         // Fetch data from your API endpoint
