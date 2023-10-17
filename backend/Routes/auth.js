@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const bodyparser = require("body-parser");
 const mongoose = require("mongoose");
-const session = require("express-session");
+const session = require("cookie-session");
 const passport = require("passport");
 var LocalStrategy = require("passport-local");
 const passportlocalmongoose = require("passport-local-mongoose");
