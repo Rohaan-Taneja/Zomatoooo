@@ -126,7 +126,7 @@ router.post('/register', function(req, res) {
         res.redirect('/user/authenticated');
       });
   });
-});
+}) ;
 
 //finishing the user session , and logging out the user
 router.get("/logout", (req, res) => {
