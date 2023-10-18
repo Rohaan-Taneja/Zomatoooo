@@ -13,7 +13,7 @@ const User_Cart = require("../models/User_Cart");
 const Food_item = require("../models/Fooditems");
 
 //for the payment system 
-const stripe=require("stripe")(process.env.STRIPE_PRIVATE_KEY)
+ const stripe=require("stripe")(process.env.STRIPE_PRIVATE_KEY)
 
 
 // variable to store the info , whether user is logged in or not (true/false);
