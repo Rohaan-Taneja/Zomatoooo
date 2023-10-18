@@ -108,7 +108,7 @@ router.get("/authenticated", (req, res) => {
   if (req.isAuthenticated()) {
     check_login_logout=true;
     console.log("mai redirect me hu");
-    res.redirect("http://localhost:3000");
+    res.redirect(`${process.env.client_url}`);
   } else {
     res.redirect("/login");
   }
@@ -136,7 +136,7 @@ router.get("/logout", (req, res) => {
     } else {
       console.log("i am logout");
       check_login_logout = false
-      res.redirect("http://localhost:3000");
+      res.redirect(`${process.env.client_url}`);
     }
   });
 });
