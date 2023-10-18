@@ -8,7 +8,7 @@ import Footer from "../Footer";
 const Cart = () => {
   const [cart_data, setcart_data] = useState([]);
 
-  const backendURL = "http://localhost:999" ;
+  const backendURL = "https://zomatoo-backend-iht3.onrender.com" ;
 
   
   useEffect(() => {
