@@ -254,7 +254,7 @@ router.post("/checkout", async (req, res) => {
           quantity: item.product_quantity
         };
       }),
-      success_url: `${process.env.SERVER_URL}`,
+      success_url: `${process.env.SERVER_URL}` ,
       cancel_url: `${process.env.SERVER_URL}/cancel`, // Specify a cancel URL
     });
     res.json({ url: session.url });
