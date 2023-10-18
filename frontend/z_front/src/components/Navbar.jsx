@@ -141,7 +141,7 @@ const Navbar = () => {
 
                     {/* logout link , secont option  */}
                     <div>
-                      <a onClick={updatelogin} href="http://localhost:999/user/logout">logout</a>
+                      <a onClick={updatelogin} href={`${backendURL}/user/logout`}>logout</a>
                     </div>
                   </div>
                 </div>             
