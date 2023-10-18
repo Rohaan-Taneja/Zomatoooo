@@ -102,13 +102,13 @@ router.get("/login", (req, res) => {
 });
 
 
-const client_url=process.env.CLIENT_URL
+
 //checking the user authentication and allowing it to proceed further
 router.get("/authenticated", (req, res) => {
   if (req.isAuthenticated()) {
     check_login_logout=true;
     console.log("mai redirect me hu");
-    res.redirect(`${client_url}`);
+    res.redirect(`${process.env.CLIENT_URL}`);
   } else {
     res.redirect("/login");
   }
@@ -136,7 +136,7 @@ router.get("/logout", (req, res) => {
     } else {
       console.log("i am logout");
       check_login_logout = false
-      res.redirect(`${client_url}`);
+      res.redirect(`${process.env.CLIENT_URL}`);
     }
   });
 });
