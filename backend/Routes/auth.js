@@ -51,7 +51,7 @@ passport.use(
     {
       clientID: process.env.CLIENTID,
       clientSecret: process.env.CLIENTSECRET,
-      callbackURL:`"https://zomatoo-backend-iht3.onrender.com/user/google/auth/authorized"`,
+      callbackURL:`${server_url}/user/google/auth/authorized`,
       scope: ["profile", "email"]
       // userProfileURL:"https://www.googleapis.com/oauth2/v3/userinfo"
     },
