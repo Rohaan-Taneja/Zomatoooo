@@ -4,20 +4,17 @@ import { useState } from "react";
 import Card_template from "../../Card_template";
 
 const Delivery = () => {
+
+  // getting food id one by one and sending it to the template 
   const fun = (food_item) => {
     return (
       <Card_template
-        i0={food_item._id}
-        
-        i1={food_item.naam}
-        i2={food_item.f_img}
-        i3={food_item.rating}
-        i4={food_item.price}
-      />
+        i={food_item}/>
     );
   };
 
-  const backendURL = "https://zomatoo-backend-iht3.onrender.com";
+  // const backendURL = "https://zomatoo-backend-iht3.onrender.com";
+  const backendURL = "http://localhost:999";
   const [fetchedData, setFetchedData] = useState([]);
 
   useEffect(() => {

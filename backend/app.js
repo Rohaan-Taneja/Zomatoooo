@@ -167,11 +167,26 @@ app.post("/", upload.single("food_img"), (req, res) => {
 app.get("/api/data", async (req, res) => {
   try {
     const food_data = await Food_item.find({});
-    res.json(food_data);
+
+    // sending back all food items ids , instead of whole food data  
+    food_ids=[]
+    for(let i in food_data){
+      food_ids.push(food_data[i]._id)
+    }
+    // console.log("hello",food_ids)
+    res.json(food_ids);
   } catch (err) {
     console.log("error oocured while fetching data => ", err);
   }
 });
+
+app.get('/api/specific_data' , async(req,res)=>{
+  const food_id= req.query.id
+  console.log(food_id)
+  const individual_food_item_data= await Food_item.find({_id:food_id})
+  console.log(individual_food_item_data)
+  res.json(individual_food_item_data)
+})
 
 
 

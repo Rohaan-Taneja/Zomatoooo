@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -64,6 +63,7 @@ const Productpage = () => {
   };
 
   return (
+
     //product usestate , contain all the data of that product , done on date ""19th""" aug , 26th aug se pehle khtmm krna hai
     // today = on 5th sept , i am designing the page
     <div>

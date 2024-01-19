@@ -30,9 +30,8 @@ const Header = () => {
  
     <div>
       <Navbar />
-      
 
-      {/* finding out , which tab is activeor selected */}
+      {/* finding out , which tab is active or selected */}
       <Taboptions acttab={activetab} setacttab={setactivetab} />
       <Filter />
 
