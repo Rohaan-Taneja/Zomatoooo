@@ -8,6 +8,7 @@ const Price_Filter = () => {
   const set_order = (event) => {
     // console.log(event.target.value)
     setfilter_query(event.target.value);
+    // console.log(event.target.value)
   };
 
   return (

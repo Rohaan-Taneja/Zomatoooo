@@ -9,6 +9,7 @@ const RatingsFilter = () => {
   const handleInputChange = (event) => {
     const newValue = parseInt(event.target.value);
     setfilter_query(newValue);
+    // console.log(newValue);
   };
   
 

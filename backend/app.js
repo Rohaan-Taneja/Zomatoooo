@@ -75,7 +75,6 @@ app.get("/fitem", async (req, res) => {
   try {
     const food = await Food_item.find({});
     res.json(food);
-    console.log("hello ji");
   } catch (error) {
     console.error("Error while fetching food item:", error);
     res.status(500).json({ error: "Internal server error" });
@@ -102,8 +101,8 @@ let upload = multer({
 
 // food data is gathered here and entered into the database
 app.post("/", upload.single("food_img"), (req, res) => {
-  console.log(req.body);
-  console.log(req.file);
+  // console.log(req.body);
+  // console.log(req.file);
 
   const newfood = new Food_item({
     f_img: req.file.path,
@@ -140,7 +139,7 @@ app.get("/api/specific_data", async (req, res) => {
   // console.log(food_id)
   const individual_food_item_data = await Food_item.find({ _id: food_id });
 
-  console.log(individual_food_item_data);
+  // console.log(individual_food_item_data);
   res.json(individual_food_item_data);
 });
 
@@ -153,14 +152,14 @@ app.get("/api/productdetails/:productid", async (req, res) => {
   res.json(productdata);
 });
 
-// ratings/ high_low filter query
 
+// ratings/ high_low filter query
 app.get("/filter/:filter_query", async (req, res) => {
   const f_query = req.params.filter_query;
 
   if (f_query === "high_to_low") {
     const resultant_products = await Food_item.find({});
-    console.log("i am hight to low");
+    console.log("i am high to low");
     resultant_products.sort((a, b) => b.price - a.price);
     res.json(resultant_products);
   } else if (f_query === "low_to_high") {
@@ -184,7 +183,7 @@ app.get("/filter/:filter_query", async (req, res) => {
 // based on type field in database
 app.get("/api/similar_restaurant/:foodtype", async (req, res) => {
   const selected_food_type = req.params.foodtype;
-  console.log(selected_food_type);
+  // console.log(selected_food_type);
 
   const similar_rest = await Food_item.find({ foodtype: selected_food_type });
 
@@ -193,21 +192,21 @@ app.get("/api/similar_restaurant/:foodtype", async (req, res) => {
 
 //post requestion from search bar of the navbar , to search a restaurant
 app.get("/restaurant/:searched_item", async (req, res) => {
-  console.log("i am colled");
+  // console.log("i am colled");
   const pname = req.params.searched_item;
-  console.log(pname);
+  // console.log(pname);
   const restaurantName = new RegExp(pname, "i");
   const find_restaurant = await Food_item.findOne({ naam: restaurantName });
 
-  console.log(find_restaurant);
+  // console.log(find_restaurant);
   if (find_restaurant == null) {
-    console.log("null hai fir bhi nhi chl rha haai ");
+    // console.log("null hai fir bhi nhi chl rha haai ");
     res.send(
       "<div>The restaurant with name is not listed on our ZOMATOO</div>"
     );
   } else {
     const food_id = find_restaurant._id;
-    console.log(food_id);
+    // console.log(food_id);
     res.json(food_id);
   }
 });
