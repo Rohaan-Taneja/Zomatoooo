@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { useEffect } from 'react';
 import Similar_Restaurants_slider from './Similar_Restaurants_slider';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fontawesome/react-fontawesome';
 
 const Overview = (props) => {
 
