@@ -17,11 +17,7 @@ const Filters_Result_Page = () => {
     // console.log(food_item , "thiss")
     return (
       <Card_template
-        i0={food_item._id}
-        i1={food_item.naam}
-        i2={food_item.f_img}
-        i3={food_item.rating}
-        i4={food_item.price}
+        i={food_item._id}
       />
     );
   };

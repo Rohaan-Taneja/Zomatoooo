@@ -4,42 +4,38 @@ import Card_template from "../../Card_template";
 import { useState } from "react";
 
 const Nightlife = () => {
+  // getting food id one by one and sending it to the template
   const fun = (food_item) => {
-    // console.log(food_item , "thiss")
-    return (
-      <Card_template
-        i0={food_item._id}
-        i1={food_item.naam}
-        i2={food_item.f_img}
-        i3={food_item.rating}
-        i4={food_item.price}
-      />
-    );
+    return <Card_template i={food_item} />;
   };
 
   const backendURL = "https://zomatoo-backend-iht3.onrender.com";
-
-  const [fetchedData, setFetchedData] = useState([]);
+  // const backendURL = "http://localhost:999";
+  const [fetcheddata3, setfetcheddata3] = useState([null]);
 
   useEffect(() => {
     // Fetch data from your API endpoint
     fetch(`${backendURL}/api/data`)
       .then((response) => response.json()) // Convert the response to JSON
-      .then((data) => setFetchedData(data))
+      .then((data) => setfetcheddata3(data))
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
+
   return (
     <div>
       <div className="heading_div">
-      <h1 className="homepage_grid_content_heading"> Nightlife Restaurants in Delhi NCR </h1>
+        <h1 className="homepage_grid_content_heading">
+          Nightlife Restaurants in Delhi NCR
+        </h1>
       </div>
-    
 
-      <div className="delivery_content_grid">
-        
-        {fetchedData.map(fun)}
-        {fetchedData.reverse().map(fun)}
-        </div>
+
+      {fetcheddata3 ? (<div className="delivery_content_grid">
+        {fetcheddata3.map(fun)}
+        {fetcheddata3.reverse().map(fun)}
+      </div>):(<div classsname> please wait....</div>)}
+
+      
     </div>
   );
 };

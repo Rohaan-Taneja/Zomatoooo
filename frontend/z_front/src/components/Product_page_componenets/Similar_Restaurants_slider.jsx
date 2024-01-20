@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Card_template from "../Card_template";
+import Similar_Restaurant_Card from "./Similar_Restaurant_Card";
 
 const Similar_Restaurants_slider = (props) => {
 
@@ -13,7 +13,7 @@ const Similar_Restaurants_slider = (props) => {
     // console.log(food_item, index);
 
     return (
-      <Card_template
+      <Similar_Restaurant_Card
         key={food_item._id}
         i0={food_item._id}
         i1={food_item.naam}

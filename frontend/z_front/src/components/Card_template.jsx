@@ -4,7 +4,9 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Card_template = (props) => {
-  const backendURL = "http://localhost:999";
+  
+  // const backendURL = "http://localhost:999";
+  const backendURL = "https://zomatoo-backend-iht3.onrender.com";
 
   const [food_data, setfoodData] = useState(null);
 
@@ -39,7 +41,7 @@ const Card_template = (props) => {
 
                 <div className="price_div">
                   <div class="pricee">{food_data[0].price} Rs</div>
-                  {console.log(food_data)}
+                  {/* {console.log(food_data)} */}
                 </div>
               </div>
             </div>

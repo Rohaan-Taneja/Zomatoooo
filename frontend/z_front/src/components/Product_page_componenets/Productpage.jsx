@@ -70,7 +70,7 @@ const Productpage = () => {
       <Navbar />
 
       <div>
-        {/* if product data is rendered and stored in the useeffect variable , then this this statement will run , */}
+        {/* if product data is rendered and stored in the usestate variable , then this this statement will run , */}
         {product ? (
           <div>
             {/* {console.log(product[0])} */}
